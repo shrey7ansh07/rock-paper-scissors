@@ -7,13 +7,13 @@ function rps(userinput,systeminput)
             switch(systeminput.toLowerCase())
             {
                 case "scissors":
-                    return "user-wins!!";
+                    console.log( "user-wins!!");
                     break;
                 case "paper":
-                    return "system-wins";
+                    console.log( "system-wins!!");
                     break;
                 case "rock":
-                    return "draw";
+                    console.log( "draw");
                     break;
             }
             break;
@@ -21,13 +21,13 @@ function rps(userinput,systeminput)
             switch(systeminput.toLowerCase())
             {
                 case "rock":
-                    return "user-wins!!";
+                    console.log( "user-wins!!");
                     break;
                 case "scissors":
-                    return "system-wins";
+                    console.log( "system-wins!!");
                     break;
                 case "paper":
-                    return "draw";
+                    console.log( "draw");
                     break;
             }
             break;
@@ -35,20 +35,40 @@ function rps(userinput,systeminput)
             switch(systeminput.toLowerCase())
             {
                 case "paper":
-                    return "user-wins!!";
+                    console.log( "user-wins!!");
                     break;
                 case "rock":
-
-                    return "system-wins";
+                    console.log( "system-wins!!");
                     break;
                 case "scissors":
-                    return "draw";
+                    console.log( "draw");
                     break;
             }
             break;
         default:
-            return "enter a valid name";
+            console.log("acche se dalo")
+
                 
         
     }
 }
+function getcomputerchoice()
+{
+    let choice = ["rock","paper","scissors"];
+    let number = Math.floor(Math.random()*3);
+    return choice[number];
+    
+}
+
+function game()
+{
+    for(let index = 0;index<5;index++)
+    {
+       let userchoice = window.prompt("enter ur choice");
+       let systemchoice = getcomputerchoice();
+       rps(userchoice,systemchoice);
+    }
+
+
+}
+game();
