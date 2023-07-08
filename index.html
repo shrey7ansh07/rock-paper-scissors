@@ -5,7 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="game">
+      <h1
+        style="font-size: 70px; font-family: 'Courier New', Courier, monospace"
+      >
+        ROCK-PAPER-SCISSOR
+      </h1>
+      <div class="score-button">
+        <div class="buttons">
+          <div class="button" id="rock">ROCK</div>
+          <div class="button" id="paper">PAPER</div>
+          <div class="button" id="scissor">SCISSOR</div>
+        </div>
+        <div class="score">
+          <div class="scores">YOUR SCORE : <span class="count">0</span></div>
+          <div class="scores">SYSTEM SCORE : <span class="count">0</span></div>
+          <div class="scores">DRAWS : <span class="count">0</span></div>
+          <button
+            id="reload-but"
+            style="
+              border: none;
+              color: white;
+              font-size: 24px;
+              background: transparent;
+            "
+          >
+            <i class="fa fa-refresh"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

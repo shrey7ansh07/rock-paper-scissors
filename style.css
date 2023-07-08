@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(rps.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:blanchedalmond;
+}
+h1
+{
+    text-align: center;
+    margin-top: 70px;
+    text-shadow: 4px 4px wheat;
+}
+.button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4.5px solid whitesmoke;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 50px;
+    font-weight: 700;
+    color: whitesmoke;
+    box-shadow: 4px 4px;
+    font-family:'Times New Roman', Times, serif;
+    transition: transform 0.3s ease-in-out,border-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out,color 0.3s ease-in-out;
+}
+.buttons
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    flex-basis: 64%;
+
+}
+.score-button
+{
+    display: flex;
+}
+.score
+{
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 36%;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+}
+.transform
+{
+    border-color: yellow;
+    transform: scale(1.1);
+    box-shadow:4px 4px yellow ;
+    color: yellow;
+}
